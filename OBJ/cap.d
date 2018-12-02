@@ -1,5 +1,4 @@
 ..\obj\cap.o: ..\HARDWARE\cap.c
-..\obj\cap.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\cap.o: ..\HARDWARE\cap.h
 ..\obj\cap.o: ..\SYSTEM\sys\sys.h
 ..\obj\cap.o: ..\SYSTEM\sys\stm32f4xx.h
@@ -11,3 +10,4 @@
 ..\obj\cap.o: ..\SYSTEM\sys\core_cmFunc.h
 ..\obj\cap.o: ..\SYSTEM\sys\core_cmSimd.h
 ..\obj\cap.o: ..\SYSTEM\sys\system_stm32f4xx.h
+..\obj\cap.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

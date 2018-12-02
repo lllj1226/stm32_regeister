@@ -8,6 +8,9 @@
 "..\obj\time_task.o"
 "..\obj\pwm.o"
 "..\obj\cap.o"
+"..\obj\sdram.o"
+"..\obj\lcd.o"
+"..\obj\ltdc.o"
 --strict --scatter "..\OBJ\test.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

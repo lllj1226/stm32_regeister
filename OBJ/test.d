@@ -16,3 +16,6 @@
 ..\obj\test.o: ..\HARDWARE\time_task.h
 ..\obj\test.o: ..\HARDWARE\pwm.h
 ..\obj\test.o: ..\HARDWARE\cap.h
+..\obj\test.o: ..\HARDWARE\sdram.h
+..\obj\test.o: ..\HARDWARE\lcd.h
+..\obj\test.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

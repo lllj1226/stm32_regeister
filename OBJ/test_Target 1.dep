@@ -1,6 +1,6 @@
 Dependencies for Project 'test', Target 'Target 1': (DO NOT MODIFY !)
 F (.\startup_stm32f429xx.s)(0x567FB5A5)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 523" --pd "STM32F429xx SETA 1"--list ..\obj\startup_stm32f429xx.lst --xref -o ..\obj\startup_stm32f429xx.o --depend ..\obj\startup_stm32f429xx.d)
-F (.\test.c)(0x5BE7E19E)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\test.o --omf_browse ..\obj\test.crf --depend ..\obj\test.d)
+F (.\test.c)(0x5BF00C31)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\test.o --omf_browse ..\obj\test.crf --depend ..\obj\test.d)
 I (..\SYSTEM\sys\sys.h)(0x5BE7AEE3)
 I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
 I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
@@ -18,6 +18,9 @@ I (..\HARDWARE\led.h)(0x5BDD990B)
 I (..\HARDWARE\time_task.h)(0x5BDE84DC)
 I (..\HARDWARE\pwm.h)(0x5BDEEDD5)
 I (..\HARDWARE\cap.h)(0x5BE7DD02)
+I (..\HARDWARE\sdram.h)(0x5BEFC783)
+I (..\HARDWARE\lcd.h)(0x57189E0E)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
 F (..\SYSTEM\delay\delay.c)(0x57145F50)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
 I (..\SYSTEM\delay\delay.h)(0x57146005)
 I (..\SYSTEM\sys\sys.h)(0x5BE7AEE3)
@@ -99,8 +102,7 @@ I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
 I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
 I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
-F (..\HARDWARE\cap.c)(0x5BE7E882)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\cap.o --omf_browse ..\obj\cap.crf --depend ..\obj\cap.d)
-I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+F (..\HARDWARE\cap.c)(0x5BEF7A19)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\cap.o --omf_browse ..\obj\cap.crf --depend ..\obj\cap.d)
 I (..\HARDWARE\cap.h)(0x5BE7DD02)
 I (..\SYSTEM\sys\sys.h)(0x5BE7AEE3)
 I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
@@ -112,3 +114,50 @@ I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
 I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
 I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
 I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+F (..\HARDWARE\sdram.c)(0x5BF0082F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\sdram.o --omf_browse ..\obj\sdram.crf --depend ..\obj\sdram.d)
+I (..\HARDWARE\sdram.h)(0x5BEFC783)
+I (..\SYSTEM\sys\sys.h)(0x5BE7AEE3)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\SYSTEM\delay\delay.h)(0x57146005)
+F (..\HARDWARE\lcd.c)(0x5729A4CF)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\lcd.o --omf_browse ..\obj\lcd.crf --depend ..\obj\lcd.d)
+I (..\HARDWARE\lcd.h)(0x57189E0E)
+I (..\SYSTEM\sys\sys.h)(0x5BE7AEE3)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (..\HARDWARE\font.h)(0x5714A213)
+I (..\SYSTEM\usart\usart.h)(0x569F345C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\HARDWARE\ltdc.h)(0x572B29A0)
+I (..\SYSTEM\delay\delay.h)(0x57146005)
+F (..\HARDWARE\ltdc.c)(0x572B11D2)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DSTM32F429xx -DSTM32F429xx --C99-o ..\obj\ltdc.o --omf_browse ..\obj\ltdc.crf --depend ..\obj\ltdc.d)
+I (..\HARDWARE\lcd.h)(0x57189E0E)
+I (..\SYSTEM\sys\sys.h)(0x5BE7AEE3)
+I (..\SYSTEM\sys\stm32f4xx.h)(0x56442678)
+I (..\SYSTEM\sys\stm32f429xx.h)(0x56442678)
+I (..\SYSTEM\sys\core_cm4.h)(0x56442610)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\SYSTEM\sys\core_cmInstr.h)(0x56442610)
+I (..\SYSTEM\sys\cmsis_armcc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmFunc.h)(0x56442610)
+I (..\SYSTEM\sys\core_cmSimd.h)(0x56442610)
+I (..\SYSTEM\sys\system_stm32f4xx.h)(0x56442676)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (..\HARDWARE\ltdc.h)(0x572B29A0)
