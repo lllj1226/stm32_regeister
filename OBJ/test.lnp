@@ -11,6 +11,10 @@
 "..\obj\sdram.o"
 "..\obj\lcd.o"
 "..\obj\ltdc.o"
+"..\obj\rtc.o"
+"..\obj\usmart.o"
+"..\obj\usmart_config.o"
+"..\obj\usmart_str.o"
 --strict --scatter "..\OBJ\test.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

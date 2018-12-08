@@ -19,3 +19,6 @@
 ..\obj\test.o: ..\HARDWARE\sdram.h
 ..\obj\test.o: ..\HARDWARE\lcd.h
 ..\obj\test.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\test.o: ..\HARDWARE\rtc.h
+..\obj\test.o: ..\USMART\usmart.h
+..\obj\test.o: ..\USMART\usmart_str.h

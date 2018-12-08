@@ -7,11 +7,22 @@
 #include "cap.h"
 #include "sdram.h"
 #include "lcd.h"
+#include "rtc.h"
+#include "usmart.h"
 //ALIENTEK 阿波罗STM32F429开发板 实验0
 //新建工程实验  
 //技术支持：www.openedv.com
 //广州市星翼电子科技有限公司
-
+//LED状态设置函数
+void led_set(u8 sta)
+{
+	LED1=sta;
+} 
+//函数参数调用测试函数
+void test_fun(void(*ledset)(u8),u8 sta)
+{
+	ledset(sta);
+}
 int main(void)
 { 
 	u8 *str = (u8 *)"llj";
@@ -26,6 +37,8 @@ int main(void)
 	sdram_init();
 	sd_task();
 	LCD_Init();
+	rtc_init();
+	usmart_dev.init(90); 		//初始化USMART	
 //	LCD_ShowString(10,40,240,32,32,"Apollo STM32"); 	
 	LCD_ShowString(100,240,220,132,32,str);
 	while(1)

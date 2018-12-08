@@ -15,3 +15,4 @@
 ..\obj\time_task.o: ..\HARDWARE\led.h
 ..\obj\time_task.o: ..\HARDWARE\pwm.h
 ..\obj\time_task.o: ..\HARDWARE\cap.h
+..\obj\time_task.o: ..\HARDWARE\rtc.h

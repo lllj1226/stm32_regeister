@@ -19,6 +19,7 @@
 #include "led.h"
 #include "pwm.h"
 #include "cap.h"
+#include "rtc.h"
 /*******************************************************************************
 *                             G l o b a l   D a t a                            *
 *******************************************************************************/
@@ -43,6 +44,7 @@ ST_TASK_SCHDLR  st_TASK_SCHDLR_list[]={
 	{&led_task , (u32)(SCHDLR_TASKBIT_100MS)},
 	{&pwm_task , (u32)(SCHDLR_TASKBIT_20MSB)},
 	{&cap_task , (u32)(SCHDLR_TASKBIT_10MS)},
+	{&rtc_task , (u32)(SCHDLR_TASKBIT_100MS)},
 	{NULL  ,(u32)0xffff}
 };
 
