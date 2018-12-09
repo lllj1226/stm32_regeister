@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F429xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HARDWARE</IncludePath>
+              <IncludePath>..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HARDWARE;..\USMART</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -463,6 +463,36 @@
               <FileName>ltdc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\ltdc.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\rtc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>USART</GroupName>
+          <Files>
+            <File>
+              <FileName>usmart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USMART\usmart.c</FilePath>
+            </File>
+            <File>
+              <FileName>usmart_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USMART\usmart_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>usmart_str.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USMART\usmart_str.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -9,6 +9,8 @@
 #include "lcd.h"
 #include "rtc.h"
 #include "usmart.h"
+#include "key_irq_sleep.h"
+#include  "key.h"
 //ALIENTEK 阿波罗STM32F429开发板 实验0
 //新建工程实验  
 //技术支持：www.openedv.com
@@ -29,8 +31,10 @@ int main(void)
 	u8 t=0;
 	Stm32_Clock_Init(360,25,2,8);	//设置时钟,180Mhz
 	delay_init(180);				//初始化延时函数
+	key_init();
 	uart_init(90,115200);			//串口初始化为115200
 	led_lnit();
+	//WKUP_Init();				//待机唤醒初始化
 	time3_init();
 	pwm_init();
 	cap_init();

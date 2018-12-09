@@ -11,6 +11,7 @@
 "..\obj\sdram.o"
 "..\obj\lcd.o"
 "..\obj\ltdc.o"
+"..\obj\key.o"
 "..\obj\rtc.o"
 "..\obj\usmart.o"
 "..\obj\usmart_config.o"

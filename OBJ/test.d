@@ -22,3 +22,5 @@
 ..\obj\test.o: ..\HARDWARE\rtc.h
 ..\obj\test.o: ..\USMART\usmart.h
 ..\obj\test.o: ..\USMART\usmart_str.h
+..\obj\test.o: ..\HARDWARE\key_irq_sleep.h
+..\obj\test.o: ..\HARDWARE\key.h
