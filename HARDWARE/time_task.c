@@ -21,6 +21,7 @@
 #include "cap.h"
 #include "rtc.h"
 #include "key.h"
+#include "pcf8574.h"
 /*******************************************************************************
 *                             G l o b a l   D a t a                            *
 *******************************************************************************/
@@ -47,6 +48,7 @@ ST_TASK_SCHDLR  st_TASK_SCHDLR_list[]={
 	{&cap_task , (u32)(SCHDLR_TASKBIT_10MS)},
 	{&rtc_task , (u32)(SCHDLR_TASKBIT_100MS)},
 	{&key_task , (u32)(SCHDLR_TASKBIT_10MS)},
+	{&pcf8547_task , (u32)(SCHDLR_TASKBIT_100MS)},
 	{NULL  ,(u32)0xffff}
 };
 

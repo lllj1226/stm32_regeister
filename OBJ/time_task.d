@@ -18,3 +18,5 @@
 ..\obj\time_task.o: ..\HARDWARE\rtc.h
 ..\obj\time_task.o: ..\HARDWARE\key.h
 ..\obj\time_task.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\time_task.o: ..\HARDWARE\pcf8574.h
+..\obj\time_task.o: ..\HARDWARE\myiic.h

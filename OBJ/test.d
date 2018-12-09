@@ -24,3 +24,5 @@
 ..\obj\test.o: ..\USMART\usmart_str.h
 ..\obj\test.o: ..\HARDWARE\key_irq_sleep.h
 ..\obj\test.o: ..\HARDWARE\key.h
+..\obj\test.o: ..\HARDWARE\pcf8574.h
+..\obj\test.o: ..\HARDWARE\myiic.h

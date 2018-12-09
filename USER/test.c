@@ -11,6 +11,7 @@
 #include "usmart.h"
 #include "key_irq_sleep.h"
 #include  "key.h"
+#include "pcf8574.h"
 //ALIENTEK 阿波罗STM32F429开发板 实验0
 //新建工程实验  
 //技术支持：www.openedv.com
@@ -27,7 +28,7 @@ void test_fun(void(*ledset)(u8),u8 sta)
 }
 int main(void)
 { 
-	u8 *str = (u8 *)"llj";
+	//u8 *str = (u8 *)"llj";
 	u8 t=0;
 	Stm32_Clock_Init(360,25,2,8);	//设置时钟,180Mhz
 	delay_init(180);				//初始化延时函数
@@ -44,7 +45,16 @@ int main(void)
 	rtc_init();
 	usmart_dev.init(90); 		//初始化USMART	
 //	LCD_ShowString(10,40,240,32,32,"Apollo STM32"); 	
-	LCD_ShowString(100,240,220,132,32,str);
+//	LCD_ShowString(100,240,220,132,32,str);
+	while(PCF8574_Init())		//检测不到PCF8574
+	{
+		LCD_ShowString(230,170,200,16,16,(u8 *)"PCF8574 Check Failed!");
+		delay_ms(500);
+		LCD_ShowString(230,170,200,16,16,(u8 *)"Please Check!        ");
+		delay_ms(500);
+		
+	}
+	LCD_ShowString(230,170,200,16,16,(u8 *)"PCF8574 Ready!"); 
 	while(1)
 	{
 	//	printf("t:%d\r\n",t);
